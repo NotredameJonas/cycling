@@ -41,6 +41,9 @@ rider:
 
 Let op: Om POST-, PUT- en DELETE-verzoeken te testen, moet je naar de map 'tests' of de map 'api-calls' gaan.
 
+ONLINE DEPLOYMENT:
+
+
 TESTEN EN FOUTAFHANDELING:
 Alle endpoints zijn getest en de testen zijn te vinden in de map 'tests' (96% coverage). Er is ook veel aandacht besteed aan foutafhandeling. Fouten worden afgehandeld met behulp van try-catch-blokken, zodat in geval van een fout de juiste foutmelding wordt weergegeven. Joi wordt gebruikt voor validatie van gegevens.
 
