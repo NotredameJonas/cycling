@@ -49,4 +49,4 @@ Jammer genoeg is het deployen van mijn api niet gelukt. Ik heb vele mogelijke op
 De code staat op azure maar op een of andere manier komt de code tevoorschijn in plaats van uitgevoerde code die tot de api endpoints moet leiden.
 
 https://cyclingapi.azurewebsites.net/index.js, wanneer ik bijvoorbeeld dit doe dan krijg ik de code van de index.js file.
-https://cyclingapi.azurewebsites.net/api/team, wanneer ik dit probeer dan krijg ik dat hij de file niet kan vinden.(404)"# cycling" 
+https://cyclingapi.azurewebsites.net/api/team, wanneer ik dit probeer dan krijg ik dat hij de file niet kan vinden.(404)

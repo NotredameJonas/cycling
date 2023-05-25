@@ -1,0 +1,40 @@
+@url = http://localhost:3000/api/rider
+
+@contentType = application/json 
+
+###
+get {{url}}
+
+###
+@objId3=646a315de3a267cf9af85ba9
+get {{url}}/{{objId3}}
+
+###
+post {{url}}
+Content-Type: {{contentType}}
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDZjOWZmMTQ3NjY1MDRiNmRiNDEwNmUiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ4NDI5NzJ9.bmnYadLibUvuhEYbghE-y2nz6We_1Uv-tZUfTh9ybU4
+
+{
+    "name":"jonasPro",
+    "wins":69,
+    "teamId":"646cede6c329c260611cdb59",
+    "raceId":"646baddd5636de10cc231878"
+}
+
+###
+@objId1=646a315de3a267cf9af85ba9
+put {{url}}/{{objId1}}
+Content-Type: application/json
+x-auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDZjOWZmMTQ3NjY1MDRiNmRiNDEwNmUiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ4NDI5NzJ9.bmnYadLibUvuhEYbghE-y2nz6We_1Uv-tZUfTh9ybU4
+
+{
+    "name":"pogiboy",
+    "wins":101,
+    "teamId":"646a3112e3a267cf9af85ba3",
+    "raceId":"646bade75636de10cc23187c"
+}
+
+###
+@objId2=646a315de3a267cf9af85ba9
+DELETE {{url}}/{{objId2}}
+x-auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDZiOTkzOGUzZGM5ODM3YjQ4NjQwODkiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ4NDQyMzl9.CQwzvSMTPBW09xRBcOELHTAoNcw73OVYDoBeKcDRZ0Q

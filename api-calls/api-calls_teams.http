@@ -1,0 +1,39 @@
+@url =http://localhost:3000/api/team
+
+@contentType = application/json 
+
+###
+get {{url}}
+
+###
+@objId3=646a3112e3a267cf9af85ba3
+get {{url}}/{{objId3}}
+
+###
+post {{url}}
+Content-Type: {{contentType}}
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDZjOWZmMTQ3NjY1MDRiNmRiNDEwNmUiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjg0ODQyNzg5fQ.WwWT08i7KJ3HxERoumBgpoNGEzC506_z2TZA0GMMPJM
+
+{
+    "name":"quickstep2",
+    "teamLeader":"Boss12",
+    "wins": 65
+}
+
+###
+@objId1=646a3112e3a267cf9af85ba3
+put {{url}}/{{objId1}}
+Content-Type: application/json
+x-auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDZjOWZmMTQ3NjY1MDRiNmRiNDEwNmUiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjg0ODQyNzg5fQ.WwWT08i7KJ3HxERoumBgpoNGEzC506_z2TZA0GMMPJM
+
+{
+    "name":"jumbo",
+    "teamLeader":"Boss2",
+    "wins": 13
+}
+
+###
+@objId2=646ca9307dd3fbe133cf32c7
+DELETE {{url}}/{{objId2}}
+x-auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDZjOWZmMTQ3NjY1MDRiNmRiNDEwNmUiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ4NDI5NzJ9.bmnYadLibUvuhEYbghE-y2nz6We_1Uv-tZUfTh9ybU4
+

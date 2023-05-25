@@ -1,0 +1,36 @@
+@url = http://localhost:3000/api/race
+@contentType = application/json 
+
+###
+get {{url}}
+
+###
+@objId3=646bade75636de10cc23187c
+get {{url}}/{{objId3}}
+
+###
+post {{url}}
+Content-Type: {{contentType}}
+x-auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDZhMmVlMjY2YWZhNzgyMmU1OTc2NzAiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjg0ODQzMzQyfQ.cTNkSG2xFhngADm2qEjEMRvApT4YhXBTSy90tzYQuTM
+
+{
+    "name":"Vuelta3",
+    "raceType":"Montains"
+}
+
+###
+@objId1=646a312fe3a267cf9af85ba5
+put {{url}}/{{objId1}}
+Content-Type: application/json
+x-auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDZiYWQ3YjU2MzZkZTEwY2MyMzE4NzQiLCJpYXQiOjE2ODQ3NzgzNjN9.n2Nttn8UFc6BFqfiH6bd-BEGW27WUdpw7zP0lRiALjI
+
+{
+    "name":"Vuelat",
+    "raceType":"Montians"
+}
+
+###
+@objId2=646a312fe3a267cf9af85ba5
+DELETE {{url}}/{{objId2}}
+x-auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDZjOWZmMTQ3NjY1MDRiNmRiNDEwNmUiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ4NDI5NzJ9.bmnYadLibUvuhEYbghE-y2nz6We_1Uv-tZUfTh9ybU4
+

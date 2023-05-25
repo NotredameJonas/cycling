@@ -1,0 +1,15 @@
+# USERS CALLS #
+@base_URL=http://localhost:3000/api/users
+
+###
+get {{base_URL}}/me
+x-auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDZjOWZmMTQ3NjY1MDRiNmRiNDEwNmUiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjg0ODQyNzg5fQ.WwWT08i7KJ3HxERoumBgpoNGEzC506_z2TZA0GMMPJM
+###
+post {{base_URL}}
+Content-Type: application/json
+
+{
+    "name": "jefke",
+    "email": "jef@gmail.com",
+    "password": "12345"
+}
