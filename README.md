@@ -42,14 +42,32 @@ rider:
 Let op: Om POST-, PUT- en DELETE-verzoeken te testen, moet je naar de map 'tests' of de map 'api-calls' gaan.
 
 ONLINE DEPLOYMENT:
+De get functionalities of my api are deployed on render.com.
+1. https://cyclingapiservice.onrender.com/api/rider -> gives a list of all the riders
+2. https://cyclingapiservice.onrender.com/api/rider/:id -> gives the rider with the given ID.
+3. https://cyclingapiservice.onrender.com/api/team -> gives a list of all the teams.
+4. https://cyclingapiservice.onrender.com/api/team/:id -> gives the team with the given ID.
+5. https://cyclingapiservice.onrender.com/api/race -> gives a list of all the races.
+6. https://cyclingapiservice.onrender.com/api/race/:id -> gives the race with the given ID.
 
+ofcourse make sure to change the ':id' with an actual id.
+
+UITGEWERKTE DEPLOYMENT STAPPENPLAN:
+stap1: ga naar render.com
+stap2: maak een account
+stap3: maak een nieuwe web service aan
+stap4: link git repository met de gewenste code aan service
+stap5: zorg dat instellingen kloppen: wat? Node(nmp install| node server.js)
+stap6: deploy en druk op de link die gecrieerd is.
 
 TESTEN EN FOUTAFHANDELING:
 Alle endpoints zijn getest en de testen zijn te vinden in de map 'tests' (96% coverage). Er is ook veel aandacht besteed aan foutafhandeling. Fouten worden afgehandeld met behulp van try-catch-blokken, zodat in geval van een fout de juiste foutmelding wordt weergegeven. Joi wordt gebruikt voor validatie van gegevens.
 
 PROBLEMEN:
-Jammer genoeg is het deployen van mijn api niet gelukt. Ik heb vele mogelijke oplossingen geprobeerd maar geen enkele lijkt te werken.
+De meest voor de hand liggende manier van deploying leek me azure. Ik heb vele mogelijke oplossingen geprobeerd maar geen enkele leek te werken.
 De code staat op azure maar op een of andere manier komt de code tevoorschijn in plaats van uitgevoerde code die tot de api endpoints moet leiden.
 
-https://cyclingapi.azurewebsites.net/index.js, wanneer ik bijvoorbeeld dit doe dan krijg ik de code van de index.js file.
-https://cyclingapi.azurewebsites.net/api/team, wanneer ik dit probeer dan krijg ik dat hij de file niet kan vinden.(404)
+https://apicycling.azurewebsites.net/index.js, wanneer ik bijvoorbeeld dit doe dan krijg ik de code van de index.js file.
+https://apicycling.azurewebsites.net/api/team, wanneer ik dit probeer dan krijg ik dat hij de file niet kan vinden.(404)
+
+gelukkig heb ik de perfecte video tegen gekomen waarin dus render gebruikt is. Life saviour!
